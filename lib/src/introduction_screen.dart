@@ -9,6 +9,9 @@ import 'package:introduction_screen/src/ui/intro_button.dart';
 import 'package:introduction_screen/src/ui/intro_page.dart';
 
 class IntroductionScreen extends StatefulWidget {
+  static IntroductionScreenState? of(BuildContext context) =>
+      context.findAncestorStateOfType<IntroductionScreenState>();
+
   /// All pages of the onboarding
   final List<PageViewModel>? pages;
 
